@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div>
+
+     <video id="vid" src="video/videoplayback.mp4" autoplay controls="controls" loop muted>
+
+     </video>
+
+    </div>
+    <div>
+      <audio id="aud" src="audio/Kalimba.mp3" autoplay controls="controls" loop>
+
+      </audio>
+    </div>
+    <button type="button" name="pause" onclick="vpause()">pause</button>
+    <button type="button" name="play" onclick="vplay()">play</button>
+
+    <button type="button" name="pause" onclick="apause()">apause</button>
+    <button type="button" name="play" onclick="aplay()">aplay</button>
+  </body>
+
+  <script type="text/javascript">
+  function vpause(){
+    var video=document.getElementById("vid");
+    video.pause();  //pause is predefined
+  }
+
+  function vplay(){
+    var video=document.getElementById("vid");
+    video.play();//play is predefined
+  }
+
+  function apause(){
+    var audio=document.getElementById("aud");
+    audio.pause();  //pause is predefined
+  }
+
+  function aplay(){
+    var audio=document.getElementById("aud");
+    audio.play();  //pause is predefined
+  }
+</script>
+
+
+</html>
